@@ -28,31 +28,56 @@ header p {
   margin: 0;
 }
 
+.titlepiece {
+  display: block;
+  clear: both;
+  position: relative;
+  margin: auto;
+  width: 50%;
+  height: 70%;
+  padding-top: 10%;
+  text-align: center;
+  font-size: 96px;
+  -webkit-text-stroke: 1px black;
+  color: #d8b01e;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    2px 2px 0 #000;
+}
+
+.portrait {
+  border-radius: 50%;
+  clear: both;
+  z-index: 100;
+  position: relative;
+  border: 5px;
+  border-color: #000000;
+  display: block;
+  min-height: 50%;
+  float: right;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+
 video#bigvid {
   position: fixed;
-  top: 50%;
-  left: 50%;
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
   z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(polina.jpg) no-repeat;
   background-size: cover;
 }
 
 .jumbotron {
-  display: flex;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
   align-items: center;
-  /* background-image: url(''); Add a video to jumbotron for now*/
-  background-size: cover;
   color: #ffffff;
-  height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
 .jumbotron h2 {
@@ -67,49 +92,21 @@ video#bigvid {
   color: #fff;
 }
 
-section .row img {
-  margin: 0 0 30px;
+.footerpiece {
+  display: block;
+  position: fixed;
+  text-decoration: none;
+  color: #d8b01e;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 0;
+  z-index: 101;
+  margin: 0 auto;
   width: 100%;
+  bottom: 0;
 }
 
-.col-md-6 {
-  margin: 0 0 30px;
-}
-
-.btn.btn-primary {
-  border-radius: 2px;
-  border: 0px;
-  color: #fbd1d5;
-  text-shadow: none;
-  background-color: #ffffff;
-}
-
-.btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #fbd1d5;
-}
-
-.btn-secondary {
-  background-color: #E8DFE0;
-  color: #ffffff;
-  margin: 0 0 30px;
-}
-
-footer {
-  font-size: 12px;
-  padding: 20px 0;
-}
-
-footer .col-sm-8 {
-  display: flex;
-  justify-content: flex-end;
-}
-
-footer ul {
-  list-style: none;
-}
-
-footer li img {
-  width: 32px;
-  height: 32px;
+.footerpiece a {
+  text-decoration: none;
+  color:#d8b01e;
 }
